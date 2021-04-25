@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rich's USA - Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="https://kit.fontawesome.com/de53b92113.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+              $('.chart').easyPieChart({
+                size: 250,
+                barColor: "#fff",
+                scaleLength: 0,
+                lineWidth: 35,
+                trackColor: "rgba(255,255,255,.4)",
+                lineCap: "circle",
+                animate: 2000,
+              });
+            });
+        </script>
+    </head>
+    <body>
+
+        
+<!-- ================================
+    Global header section start here
+===================================== -->
+
+     <header class="header">
+        <div class="top-bar">
+            <div class="uk-flex">
+                <div class="uk-navbar-left">
+                    <div class="uk-inline language-menu">
+                        <button class="uk-button uk-button-default" type="button"><span><img src="images/usa.png" alt="usa"></span><span>UNITED STATES </span><i class="fas fa-angle-down"></i></button>
+                        <div uk-dropdown="mode: click">
+                            <ul>
+                                <li>
+                                    
+                                    <a href="#"><span><img src="images/canada.png" alt="usa"></span> <span>CANADA</span> <i class="fas fa-angle-right"></i></a>
+                                    <a href="#"><span><img src="images/richs-logo-red-xs.png" alt="usa"></span> <span>GLOBAL</span> <i class="fas fa-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="top-navigation">
+                        <li><a href="#" class="tr-btn uk-text-uppercase">Buy Now</a></li>
+                        <li><a href="#" class="bg-btn uk-text-uppercase">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div class="uk-container">
+                <div class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                    <div class="uk-navbar-left">
+                        <a href="" class="uk-navbar-item uk-logo"><img src="images/Logo.png" alt="Rich's USA" title="Rich's USA" ></a> 
+                    </div>
+                    <div class="uk-navbar-right">
+                         <ul class="uk-navbar-nav uk-visible@m" >
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Business Solutions</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i></a></li>
+                        </ul>
+                        <a href="#" class="uk-hidden@m  mobile-search"><i class="fas fa-search"></i></a>
+                        <a href="#" class="uk-navbar-toggle uk-hidden@m" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+        <div class="uk-offcanvas-bar">
+            <ul class="uk-nav">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Business Solutions</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- ================================
+    Global header section end here
+===================================== -->
+
+
+<!-- ================================
+    Hero section start here
+===================================== -->
+       
+    <section class="hero-section dashboard">
+        <div class="image-holder">            
+            <img src="images/dashboard.png" alt="dashboard-hero" title="dashboard-hero">
+        </div>
+        <div class="over-content">
+            <div class="uk-container">
+                <div class="uk-grid-match" uk-grid> 
+                    <div class="uk-width-expand@m">
+                        <div class="uk-flex algin-center uk-flex-column">
+                            <span class="hero-slogan uk-text-uppercase">Welcome back, bridget</span>
+                            <h1 class="hero-title uk-text-uppercase">Your Courses</h1>
+                            <p class="hero-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-auto@m">
+                        <div class="grd-box bg-transparent">
+                            <div class="box">
+                            <div class="chart" data-percent="8" data-scale-color="#fff">8%</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ================================
+    Hero section end here
+===================================== -->
+
+<!-- ================================
+    course featured section start here
+===================================== -->
+<section class="course-featured-list">
+    <div class="uk-container">
+        <div class="uk-flex uk-flex-right">
+            <div class="uk-form">
+                <div class="uk-margin">
+                    <span class="r-lable">SHOW </span>
+                    <div uk-form-custom="target: > * > span:first-child" class="import">
+                        <select>
+                            <option value="">All</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                        </select>
+                        <button class="uk-button uk-button-default" type="button" tabindex="-1">
+                            <span></span>
+                            <span ></span>
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div uk-grid class="uk-grid-match">
+            <div class="uk-width-1-3@m uk-width-1-2@s">
+                <div class="uk-panel course_box ">
+                    <div class="cr-img uk-position-relative">
+                        <img src="images/cr1.jpg" alt="cr1" title="cr1">
+                        <span class="badge uk-position-absolute">10%</span>
+                    </div>
+                    <div class="cr-detail">
+                        <h4>Food Allergens & Intolerances</h4>
+                        <p>Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <a href="#" class="uk-button uk-margin uk-button-default  uk-margin-small-bottom enoroll-btn dark">Continue Course <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m uk-width-1-2@s">
+                <div class="uk-panel course_box ">
+                    <div class="cr-img">
+                        <img src="images/cr2.jpg" alt="cr1" title="cr1">
+                    </div>
+                    <div class="cr-detail">
+                        <h4>Food Allergens & Intolerances</h4>
+                        <p>Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <a href="#" class="uk-button uk-margin uk-button-default  uk-margin-small-bottom enoroll-btn dark">Continue Course <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-3@m uk-width-1-2@s">
+                <div class="uk-panel course_box ">
+                    <div class="cr-img uk-position-relative">
+                        <img src="images/cr3.jpg" alt="cr1" title="cr1">
+                        <span class="badge uk-position-absolute"><svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.4545 2L7.45455 14L2 8.54545" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </span>
+                    </div>
+                    <div class="cr-detail">
+                        <h4>Food Allergens & Intolerances</h4>
+                        <p>Lorem Ipsum is simply dummy text of th printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.</p>
+                        <a href="#" class="uk-button uk-margin uk-button-default  uk-margin-small-bottom enoroll-btn dark">Continue Course <i class="fas fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================================
+    course featured section start here
+===================================== -->
+
+<!-- ===================================
+    Footer section start here
+======================================== -->
+<footer>
+    <div class="uk-container">
+        <div uk-grid class="uk-grid-match">
+            <div class="uk-width-expand@m">
+                <div class="uk-flex">
+                    <div class="footer-col-1 footer-col">
+                        <ul>
+                            <li>
+                                <a href="#">Discover Our <br> Products</a>
+                            </li>
+                            <li><a href="#">Pizza</a></li>
+                            <li><a href="#">Breads & Rolls</a></li>
+                            <li><a href="#">Donuts</a></li>
+                            <li><a href="#">Toppings & Creams</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">Cakes & Brownies</a></li>
+                            <li><a href="#">Bettercreme</a></li>
+                            <li><a href="#">See All Categories</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-1 footer-col">
+                        <ul>
+                            <li>
+                                <a href="#">Explore Business <br> Solutions</a>
+                            </li>
+                            <li><a href="#">Foodservice</a></li>
+                            <li><a href="#">College & University</a></li>
+                            <li><a href="#">Convenience</a></li>
+                            <li><a href="#">K-12</a></li>
+                            <li><a href="#">Healthcare</a></li>
+                            <li><a href="#">In-Store Bakery</a></li>
+                            <li><a href="#">Deli Prepared Foods</a></li>
+                            <li><a href="#">Industrial Solutions</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col-1 footer-col">
+                        <ul>
+                            <li>
+                                <a href="#">Navigate Our <br> Website</a>
+                            </li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Business Solutions</a></li>
+                            <li><a href="#">Recipes</a></li>
+                            <li><a href="#">Our Brands</a></li>
+                            <li><a href="#">Nutrition Finder</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-1 footer-col">
+                        <ul>
+                            <li>
+                                <a href="#">Other Rich’s <br> Destinations</a>
+                            </li>
+                            <li><a href="#">Rich’s Careers</a></li>
+                            <li><a href="#">Rich’s Global</a></li>
+                            <li><a href="#">Rich’s Canada</a></li>
+                            <li><a href="#">Rich’s Mexico</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="footer-spacer">
+                <div class="uk-flex">
+                    
+                    <div class="uk-navbar-left">
+                        <a href="#">
+                            <img src="images/footer-logo.webp" alt="footerlogo" title="footerlogo" class="logo-footer">
+                        </a>
+                        <div class="copyright">
+                        © <span class="number-label">2021</span> Rich Products Corporation, <br>All Rights Reserved. 
+                        </div>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="social-media">
+                            <ul>
+                            <li><a href="https://www.facebook.com/RichProducts/" target="_blank"><img alt="Facebook" src="images/facebook-logo.webp"></a></li>
+                            <li><a href="https://www.instagram.com/rich_products/" target="_blank"><img alt="Instagram" src="images/instagram-logo.webp"></a></li>
+                            <li><a href="https://www.linkedin.com/company/richproducts/" target="_blank"><img alt="LinkedIn" src="images/linkedin-logo.webp"></a></li>
+                            <li><a href="https://twitter.com/RichProducts" target="_blank"><img alt="Twitter" src="images/twitter-logo.webp"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCiyN_ljY4TpQHbYtnZJx9mA" target="_blank"><img alt="YouTube" src="images/youtube-logo.webp"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-auto@m">
+                <div class="footer-right">
+                <div class="footer-cta background-richs-gradient-45">
+                <img src="https://www.richsusa.com/wp-content/uploads/2020/02/Vector-Smart-Object_4.png">
+                <h2 class="title">CONTACT US</h2>
+                <div class="text">We have the insights, expertise and solutions to handle any culinary challenge. Let’s start the conversation.</div>
+                <a class="uk-button uk-button-default uk-width-auto enoroll-btn" href="#"  target="">Get in touch</a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ===================================
+    Footer section end here
+======================================== -->
+    </body>
+</html>
